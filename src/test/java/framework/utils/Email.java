@@ -367,8 +367,7 @@ public class Email {
 
 
     public static void main(String[] args) throws MessagingException, InterruptedException {
-        Email email = new Email("imaps","imap-mail.outlook.com","email","password");
-        System.out.println(email.getMailBody("TescoMobilePayMonthly", "Password reset - Pay Monthly Price Plans - Tesco Mobile"));
+
     }
 
 
