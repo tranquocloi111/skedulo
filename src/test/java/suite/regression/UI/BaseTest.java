@@ -37,9 +37,9 @@ public class BaseTest {
     public  void beforeMethod(Method m) throws MalformedURLException {
         test.set(extent.createTest(m.getName()));
         Config.loadEnvInfoToQueue();
-        DriverFactory.getInstance().getDriver(By.xpath("//select[@name='quantity']")).manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        DriverFactory.getInstance().getDriver(By.xpath("//select[@name='quantity']")).manage().window().maximize();
-        DriverFactory.getInstance().getDriver(By.xpath("//select[@name='quantity']")).get(Config.getProp("appUrl"));
+        DriverFactory.getInstance().getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        DriverFactory.getInstance().getDriver().manage().window().maximize();
+        DriverFactory.getInstance().getDriver().get(Config.getProp("appUrl"));
 
     }
 
@@ -90,7 +90,7 @@ public class BaseTest {
 
     protected void loadPageByUrl(String url)
     {
-        DriverFactory.getInstance().getDriver(By.xpath("//select[@name='quantity']")).get(url);
+        DriverFactory.getInstance().getDriver().get(url);
     }
     
 

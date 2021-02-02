@@ -2,18 +2,21 @@ package logic.pages;
 
 import org.openqa.selenium.WebElement;
 
-public class HomePage extends BasePage{
+public class HomePage extends BasePage {
 
     private HomePage() {
     }
-    public static HomePage getInstance(){
+
+    public static HomePage getInstance() {
         return new HomePage();
     }
 
-    public WebElement getTodayDeal(){
+    public WebElement getTodayDeal() {
         return getAElementByText("Today's Deals");
     }
-    public void clickTodayDeal(){
+
+    public void clickTodayDeal() {
+        waitUntilElementClickable(getTodayDeal());
         click(getTodayDeal());
     }
 }

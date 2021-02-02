@@ -11,6 +11,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.*;
 
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.text.ParseException;
 import java.util.*;
 
 public class BasePage {
@@ -128,6 +132,7 @@ public class BasePage {
     protected void selectByVisibleText(WebElement element, String value) {
         Select drpCountry = new Select(element);
         drpCountry.selectByVisibleText(value);
+        waitForPageLoadComplete(10);
     }
 
     protected void selectByIndex(WebElement element, int index) {
@@ -429,12 +434,6 @@ public class BasePage {
         select.selectByVisibleText(text);
     }
 
-    public void setDateByLabel(WebElement calenderElement, String label, int numberNextMonth, String date) {
-        click(findDivByLabel(label).findElement(By.xpath(".//input")));
-        DateTimePicker dateTimePicker = new DateTimePicker(calenderElement);
-        dateTimePicker.nextMonth(numberNextMonth);
-        dateTimePicker.selectDate(date);
-    }
 
     @FindBy(xpath = "//input[@type='search']")
     WebElement searchInput;
@@ -511,11 +510,29 @@ public class BasePage {
     public static List<WebElement> getAllAElementsById(String id) {
         return DriverFactory.getInstance().getDriver().findElements(By.id(id));
     }
-    public static List<WebElement> getAllButtonsByText(String text) {
-        String xpath = String.format("//button[normalize-space('%s')]",text);
+
+    protected WebElement getInputById(String id) {
+        String xpath = String.format("//input[@id='%s']", id);
+        return getDriver().findElement(By.xpath(xpath));
+    }
+
+    public static List<WebElement> getAllDivElementsByClass(String className) {
+        String xpath = String.format("//span[contains(@class,'%s')]", className);
         return DriverFactory.getInstance().getDriver().findElements(By.xpath(xpath));
     }
 
+    public static List<WebElement> getAllButtonsByText(String text) {
+        String xpath = String.format("//button[normalize-space('%s')]", text);
+        return DriverFactory.getInstance().getDriver().findElements(By.xpath(xpath));
+    }
+
+    public BigDecimal parse(final String amount, final Locale locale) throws ParseException {
+        final NumberFormat format = NumberFormat.getNumberInstance(locale);
+        if (format instanceof DecimalFormat) {
+            ((DecimalFormat) format).setParseBigDecimal(true);
+        }
+        return (BigDecimal) format.parse(amount.replaceAll("[^\\d.,]", ""));
+    }
 
     //endregion
 }

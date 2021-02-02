@@ -1,9 +1,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="RegressionSuite" verbose="2">
+    <listeners>
+        <listener class-name="framework.report.AnnotationTransformer"/>
+    </listeners>
     <test name="test1" parallel="methods" thread-count="2">
-        <packages>
-            <package name="suite.regression"/>
-        </packages>
+        <classes>
+            <class name="suite.regression.UI.ShoppingOnAmazoneTC"/>
+        </classes>
     </test>
 </suite>
