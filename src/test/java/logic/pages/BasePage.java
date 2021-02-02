@@ -2,9 +2,6 @@ package logic.pages;
 
 import framework.wdm.DriverFactory;
 import framework.wdm.WdManager;
-import logic.business.helper.MiscHelper;
-import logic.utils.Parser;
-import logic.utils.TimeStamp;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -354,24 +351,6 @@ public class BasePage {
 
     public String getTitle() {
         return getDriver().getTitle();
-    }
-
-    public String getNextAllowanceDate() {
-        String date = Parser.parseDateFormate(TimeStamp.Today(), TimeStamp.DATE_FORMAT_IN_PDF);
-        int day = Integer.parseInt(date.substring(0, 2));
-        if (day >= 23) {
-            return "23/" + Parser.parseDateFormate(TimeStamp.TodayPlus1Month(), TimeStamp.DATE_FORMAT_IN_PDF3);
-        } else {
-            return "23/" + Parser.parseDateFormate(TimeStamp.TodayPlus1Month(), TimeStamp.DATE_FORMAT_IN_PDF3);
-        }
-    }
-
-    public void savePDFFile(WebElement element, String fileName, String tittle) {
-        String parent = getTitle();
-        switchWindow(tittle, false);
-        String url = element.getAttribute("src");
-        MiscHelper.saveFileFromWebRequest(url, fileName);
-        switchWindow(parent, false);
     }
 
     protected void enterValueByLabel(List<WebElement> element, String... val) {

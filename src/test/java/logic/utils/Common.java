@@ -2,7 +2,6 @@ package logic.utils;
 
 import com.opencsv.CSVReader;
 import framework.utils.Log;
-import net.bytebuddy.implementation.bytecode.Throw;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
 import java.io.*;
