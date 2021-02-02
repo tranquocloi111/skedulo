@@ -2,19 +2,12 @@ package framework.utils;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.gson.JsonArray;
-import com.mongodb.util.JSON;
-import com.sun.tools.javac.util.List;
 import logic.utils.Common;
-import org.json.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.testng.Assert;
-
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.stream.Collectors;
 
 public class JsonReader {
 
@@ -121,8 +114,6 @@ public class JsonReader {
 
         JSONObject jsonObject2 = null;
         jsonObject2 = readJson("src/test/resources/Json/UserProfile");
-//        compareTwoJsonObject(jsonObject1,jsonObject2);
-
 
     }
 
