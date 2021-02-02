@@ -53,25 +53,25 @@ public class ShoppingOnAmazoneTC extends BaseTest {
         SearchPage.getInstance().goToCart();
 
         test.get().info("Step 10: Update quantity of products ");
-        CartPage.getInstance().selectQuantityOfProduct("1",1);
-        CartPage.getInstance().selectQuantityOfProduct("3",0);
+        CartPage.getInstance().selectQuantityOfProduct("1", 1);
+        CartPage.getInstance().selectQuantityOfProduct("3", 0);
 
 
         test.get().info("Step 11: Assert quantity of products ");
-        Assert.assertEquals(CartPage.getInstance().getSubTotal(),"Subtotal (4 items):");
+        Assert.assertEquals(CartPage.getInstance().getSubTotal(), "Subtotal (4 items):");
 
         test.get().info("Step 12: Assert prices of products ");
-        BigDecimal totalPrice=CartPage.getInstance().getToTalPay();
-        double expectedTotal =firstItemPrice.doubleValue()+secondItemPrice.doubleValue()*3;
-        Assert.assertEquals(CartPage.roundDouble(expectedTotal,2),totalPrice);
+        BigDecimal totalPrice = CartPage.getInstance().getToTalPay();
+        double expectedTotal = firstItemPrice.doubleValue() + secondItemPrice.doubleValue() * 3;
+        Assert.assertEquals(CartPage.roundDouble(expectedTotal, 2), totalPrice);
 
-        BigDecimal actualFirstItemPrice=CartPage.getInstance().getPriceByIndex(1);
-        Assert.assertEquals(actualFirstItemPrice,firstItemPrice);
+        BigDecimal actualFirstItemPrice = CartPage.getInstance().getPriceByIndex(1);
+        Assert.assertEquals(actualFirstItemPrice, firstItemPrice);
 
-        BigDecimal actualSecondItemPrice=CartPage.getInstance().getPriceByIndex(0);
-        Assert.assertEquals(actualSecondItemPrice,secondItemPrice);
+        BigDecimal actualSecondItemPrice = CartPage.getInstance().getPriceByIndex(0);
+        Assert.assertEquals(actualSecondItemPrice, secondItemPrice);
 
-//
+
     }
 
 }

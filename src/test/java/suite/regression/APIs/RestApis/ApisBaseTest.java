@@ -12,7 +12,6 @@ import framework.utils.Log;
 import framework.wdm.DriverFactory;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import logic.business.db.MySQLDb;
 import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -21,8 +20,6 @@ import org.testng.annotations.*;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 
-//import com.aventstack.extentreports.reporter.KlovReporter;
-//import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 
 @Listeners(ExecutionListener.class)
 public class ApisBaseTest {
@@ -108,15 +105,7 @@ public class ApisBaseTest {
     }
 
 
-    protected String getInviteId() {
-        String email = Config.getProp("apiUserName");
-        String sql = String.format("select inv.id from tbl_user as us, tbl_course_invitation as inv where us.username='%s' and us.id=inv.employee_id and inv.status <> '0' order by inv.id desc", email);
-        return MySQLDb.getMySqlInstance().executeQueryReturnListString(sql).get(0)
-                .replace("id", "")
-                .replace("{", "")
-                .replace("}", "")
-                .replace("=", "");
-    }
+
     //endregion
 
 }

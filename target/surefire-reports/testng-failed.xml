@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [RegressionSuite]">
+  <listeners>
+    <listener class-name="framework.report.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="test1(failed)" parallel="methods">
+    <classes>
+      <class name="suite.regression.UI.ShoppingOnAmazoneTC">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+          <include name="amazoneShoppingTCs"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- suite.regression.UI.ShoppingOnAmazoneTC -->
+    </classes>
+  </test> <!-- test1(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->

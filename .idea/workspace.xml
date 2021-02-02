@@ -5,77 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4be0c722-11de-4cc4-a224-a0f4cdbc3d46" name="Default Changelist" comment="init skedulo">
+      <change afterPath="$PROJECT_DIR$/src/test/java/logic/business/db/MySQLDb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/logic/business/db/OracleDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/logic/business/db/billing/CommonActions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/VLB_Automation_Report_APIS.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/framework/utils/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/framework/utils/JsonReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Driver/chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Driver/chromedriver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/config/Config.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/report/AnnotationTransformer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/report/ResultManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/report/RetrySetup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/report/Status.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/report/TestResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/report/elasticsearch/ElasticSender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/report/elasticsearch/ExecutionListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/report/elasticsearch/ResultManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/utils/Db.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/utils/Email$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/utils/Email$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/utils/Email$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/utils/Email.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/utils/FTP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/utils/FileDownloader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/utils/JsonReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/utils/Log.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/utils/Pdf.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/utils/RandomCharacter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/utils/SFTP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/utils/SSHManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/utils/Soap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/utils/Timer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/utils/Xml.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/wdm/Browser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/wdm/DriverFactory$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/wdm/DriverFactory$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/wdm/DriverFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/wdm/WDFactory$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/wdm/WDFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/framework/wdm/WdManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/business/db/MySQLDb.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/business/db/OracleDB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/business/db/billing/CommonActions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/business/helper/DateTimeHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/business/helper/EmailHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/business/helper/FTPHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/business/helper/JsonHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/business/helper/MiscHelper$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/business/helper/MiscHelper$MyAuthenticator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/business/helper/MiscHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/business/helper/RemoteJobHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/business/helper/SFTPHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/pages/BasePage$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/pages/BasePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/pages/CartPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/pages/HomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/pages/ProductDetailPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/pages/SearchPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/pages/TableControlBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/utils/Common.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/utils/DiffMatchPatch$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/utils/DiffMatchPatch$Diff.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/utils/DiffMatchPatch$LinesToCharsResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/utils/DiffMatchPatch$Operation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/utils/DiffMatchPatch$Patch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/utils/DiffMatchPatch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/utils/Parser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/utils/TimeStamp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/logic/utils/XmlUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/suite/regression/APIs/RestApis/ApisBaseTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/suite/regression/UI/BaseTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/suite/regression/UI/ShoppingOnAmazoneTC.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/framework/utils/Pdf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/framework/utils/RandomCharacter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/logic/business/helper/MiscHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/logic/business/helper/RemoteJobHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/logic/business/helper/SFTPHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/logic/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/logic/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/logic/utils/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/logic/utils/Common.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/suite/regression/APIs/RestApis/ApisBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/suite/regression/APIs/RestApis/ApisBaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/suite/regression/UI/ShoppingOnAmazoneTC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/suite/regression/UI/ShoppingOnAmazoneTC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Kedulo_Automation_Report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Kedulo_Automation_Report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +38,11 @@
     <option name="NEW_BASE" value="origin/master" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -124,7 +74,7 @@
       <recent name="logic.pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG./Users/loi.tran/IdeaProjects/java-selenium/src/test/resources/testng.xml">
+  <component name="RunManager" selected="TestNG.ShoppingOnAmazoneTC.amazoneShoppingTCs">
     <configuration name="ShoppingOnAmazoneTC" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Skedulo" />
       <extension name="coverage">
@@ -142,7 +92,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShoppingOnAmazoneTC.createCompanyAdmin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ShoppingOnAmazoneTC.amazoneShoppingTCs (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Skedulo" />
       <extension name="coverage">
         <pattern>
@@ -152,7 +102,25 @@
       </extension>
       <option name="PACKAGE_NAME" value="suite.regression.UI" />
       <option name="MAIN_CLASS_NAME" value="suite.regression.UI.ShoppingOnAmazoneTC" />
-      <option name="METHOD_NAME" value="createCompanyAdmin" />
+      <option name="METHOD_NAME" value="amazoneShoppingTCs" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShoppingOnAmazoneTC.amazoneShoppingTCs" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Skedulo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="suite.regression.UI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="suite.regression.UI" />
+      <option name="MAIN_CLASS_NAME" value="suite.regression.UI.ShoppingOnAmazoneTC" />
+      <option name="METHOD_NAME" value="amazoneShoppingTCs" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -180,28 +148,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="suite.regression.UI.CreateContract and 3 more" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Skedulo" />
-      <option name="TEST_OBJECT" value="PATTERN" />
-      <properties />
-      <listeners />
-      <patterns>
-        <pattern testClass="suite.regression.UI.CreateContract" />
-        <pattern testClass="suite.regression.UI.CreatePackage" />
-        <pattern testClass="suite.regression.UI.demo2" />
-        <pattern testClass="suite.regression.UI.Scenarios" />
-      </patterns>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG./Users/loi.tran/IdeaProjects/java-selenium/src/test/resources/testng.xml" />
+        <item itemvalue="TestNG.ShoppingOnAmazoneTC.amazoneShoppingTCs" />
+        <item itemvalue="TestNG.ShoppingOnAmazoneTC.amazoneShoppingTCs (1)" />
         <item itemvalue="TestNG./Users/loi.tran/IdeaProjects/java-selenium/testng.xml" />
+        <item itemvalue="TestNG./Users/loi.tran/IdeaProjects/java-selenium/src/test/resources/testng.xml" />
         <item itemvalue="TestNG.ShoppingOnAmazoneTC" />
-        <item itemvalue="TestNG.ShoppingOnAmazoneTC.createCompanyAdmin" />
-        <item itemvalue="TestNG.suite.regression.UI.CreateContract and 3 more" />
       </list>
     </recent_temporary>
   </component>
@@ -256,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612263636524</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="init skedulo">
+      <created>1612264751708</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1612264751708</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -274,16 +234,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init skedulo" />
     <option name="LAST_COMMIT_MESSAGE" value="init skedulo" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/suite/regression/UI/ShoppingOnAmazoneTC.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
